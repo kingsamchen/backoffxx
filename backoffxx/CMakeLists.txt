@@ -4,6 +4,7 @@ add_library(backoffxx INTERFACE)
 target_sources(backoffxx
   PRIVATE
     backoffxx.h
+    policies.h
 
   $<$<BOOL:${WIN32}>:
   >

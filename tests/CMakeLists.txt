@@ -9,7 +9,7 @@ add_executable(backoffxx_test)
 
 target_sources(backoffxx_test
   PRIVATE
-    demo_test.cpp
+    policies_test.cpp
 )
 
 apply_backoffxx_compile_conf(backoffxx_test)
