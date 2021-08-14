@@ -3,6 +3,7 @@ add_library(backoffxx INTERFACE)
 
 target_sources(backoffxx
   PRIVATE
+    backoff.h
     backoffxx.h
     policies.h
 
