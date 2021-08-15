@@ -2,7 +2,7 @@
 add_library(backoffxx INTERFACE)
 
 target_sources(backoffxx
-  PRIVATE
+  INTERFACE
     attempt.h
     backoff.h
     backoffxx.h
@@ -35,6 +35,7 @@ target_compile_definitions(backoffxx
     >
 )
 
+if(MSVC)
 get_target_property(backoffxx_FILES backoffxx SOURCES)
 source_group("backoffxx" FILES ${backoffxx_FILES})
 
@@ -52,3 +53,4 @@ set_target_properties(backoffxx PROPERTIES
     VS_GLOBAL_EnableClangTidyCodeAnalysis true
     # VS_GLOBAL_ClangTidyChecks -checks=-*,modernize-*,-modernize-use-trailing-return-type
 )
+endif()
