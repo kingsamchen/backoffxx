@@ -5,6 +5,7 @@
 #ifndef BACKOFFXX_BACKOFFXX_H_
 #define BACKOFFXX_BACKOFFXX_H_
 
-#include "backoffxx/backoffxx.h"
+#include "backoffxx/attempt.h"
+#include "backoffxx/backoff.h"
 
 #endif // BACKOFFXX_BACKOFFXX_H_
